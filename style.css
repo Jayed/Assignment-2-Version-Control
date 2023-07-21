@@ -1,0 +1,651 @@
+/* Common styles start  */
+:root {
+    font-family: 'Work Sans', sans-serif;
+    --primary-color: #FF42A5;
+    --secondary-color: #4EC5F7;
+    --third-color: #0B0223;
+    --gradient: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    --margin-x: 15rem;
+    --margin-y: 7.5rem;
+    --padding: 0.5rem;
+    --border-radius: 0.6rem;
+    --box-shadow: 0.1rem .2rem, 0.8rem rgba(205, 202, 202, 0.5)
+}
+
+.bg-color {
+    background-color: var(--third-color);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.margin-tb-16 {
+    margin: 1rem 0px;
+}
+
+.margin-b-16 {
+    margin: 1rem 0px;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-x {
+    gap: 0rem 0.5rem;
+}
+
+.padding-x-2 {
+    padding: 0rem 2rem;
+}
+
+.padding-x-0.5 {
+    padding: 0rem 0.5rem;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.flex-gap {
+    display: flex;
+    gap: 1rem;
+    align-items: center
+}
+
+.gap {
+    gap: 0.5rem;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border: none;
+    padding: var(--padding);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* .btn:hover {
+    background-color: ;
+} */
+.text-center {
+    text-align: center;
+}
+
+.heading {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.para {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-max-width {
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
+/* Reset code and common ends here */
+
+/* Common styles ends  */
+
+/* Header section styles start  */
+/* Nav styles start  */
+header {}
+
+header .nav-content {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.logo-container img {
+    width: 80px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+nav .para {
+    font-weight: 500;
+}
+
+.social-icons {
+    width: 210px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+.social-icons .facebook {
+    color: red;
+}
+
+/* Nav styles ends  */
+/* .banner .col-2{
+    border: 2px sold red;
+    max-width: 500px;
+    max-height: 200px;
+} */
+
+/* Banner styles start  */
+.banner .col-1 {
+    padding-left: 1rem;
+}
+
+.button-container {
+    margin: 1rem 0rem 0rem 1.1rem;
+}
+
+button {
+    color: #FFF;
+    border-radius: 48px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    border: none;
+}
+
+.btn-1 {
+    background: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.btn-2 {
+    background: var(--secondary-color);
+}
+.btn-3 {
+    background: white;
+    color: var(--primary-color);
+}
+
+.banner .button-container button:hover {
+    opacity: 80%;
+}
+
+.banner .col-1 h3 {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.gradient {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .col-1 .heading {
+    margin: 0.8rem 0px;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* Banner styles ends  */
+/* Headers styles end  */
+
+/* Main section styles start  */
+/* games section styles start  */
+/* Gamer styles start   */
+.gamer {
+    display: flex;
+}
+
+.gamer .col-1, .col-2 {
+    flex: 1;
+}
+
+/* .gamer img{
+    max-width: 700px;
+    max-height: 20rem;
+} */
+.gamer button {
+    margin: 1rem 0rem;
+}
+
+.para-purpose {
+    font-size: 1.25rem;
+    margin-bottom: 0.1rem;
+}
+
+.heading-unleash {
+    font-size: 1.6rem;
+}
+
+.gamer .col-2 p.para:nth-of-type(2) {
+    margin-top: 1rem;
+}
+.gamer .col-1{
+    border: 2px solid red;
+    flex: 0 0 60%;
+}
+.gamer .col-2 {
+    text-align: right;
+    border: 2px solid red;
+    margin: auto 0px;
+    padding: 1rem 2rem 1rem 1rem;
+}
+/* Gamer styles end   */
+.career {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    display: flex;
+    padding: 0rem 2rem;
+}
+.career .item-1{
+    padding-right: 1rem;
+}
+.career .item, .item-1-sub-item div{
+    flex: 1;
+}
+.career p{
+    color: white;
+}
+.item-1-sub-item{
+    display: flex;
+}
+.career .btn-class{
+    padding: 1rem 0rem;
+}
+/* .item-1-sub-item .item-1-1{
+    text-align: left;
+} */
+.item-1-sub-item .item-1-2{
+    text-align: right;
+}
+.item-1-sub-item .para{
+    font-size: 600;
+    font-size: 15px;
+}
+
+.games .games-pic-container {
+    margin-bottom: 3rem;
+}
+
+.games .card {
+    flex: 1;
+}
+
+.games .card p {
+    margin-top: 1rem;
+    padding: 0px 0.5rem;
+}
+
+.games-pic-container .card-3 {
+    position: relative;
+}
+
+.games-pic-container .card-3 i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.games-pic-container .card-3:hover img {
+    opacity: 0.5;
+}
+
+/* play section styles start  */
+.play {
+    padding-top: 60px;
+}
+
+.play .col-1 {
+    margin: 0px 80px;
+    text-align: right;
+}
+
+.play .two-column {
+    gap: 80px;
+}
+
+.play .image-1 {
+    position: relative;
+    top: 0px;
+    right: -40px;
+    width: 90%;
+    height: 90%
+}
+
+.play .image-2 {
+    position: relative;
+    top: -150px;
+    right: 70px;
+    width: 50%;
+    height: 50%
+}
+
+/* play section styles end */
+/* icons section styles end  */
+/* .icons{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+} */
+.icons {
+    margin: 0px auto;
+}
+
+.icon-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.icon-content .icon {
+    gap: 8px;
+    width: 18%;
+    margin-bottom: 16px;
+    /* border-radius: 50px; */
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    /* border-radius: 50px; */
+}
+
+.icons .para {
+    font-size: 12px;
+}
+
+.icon-content .icon:hover,
+.icons img:hover {
+    border-radius: 50px;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+
+}
+
+.icons .para:hover {
+    color: var(--primary-color);
+}
+
+/* icons section styles ends */
+/* Main section styles end  */
+
+/* Footer section styles end  */
+.footer-section {
+    padding: 80px 0px;
+}
+
+/* footer .logo-container{
+    display: flex;
+} */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #FFF;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer .link-content ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .link-icons a {
+    font-size: 20px
+}
+
+footer .link-icons ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .link-policy ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .link-policy a {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 10px;
+}
+
+.copy-wight .para {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 10px;
+}
+
+/* footer .link-content {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;} */
+/* Footer section styles start  */
+
+/* Footer section styles end  */
+
+/* Responsive styles  */
+/* Mobile styles  */
+@media screen and (max-width: 576px) {
+
+    header {
+        padding: 20px 30px 50px 10px;
+    }
+
+    header .flex-space-between,
+    header .flex-gap {
+        flex-direction: column;
+    }
+
+    header .logo-container {
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .logo-container .logo-heading {
+        font-size: 20px;
+    }
+
+    .two-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-1,
+    .col-2 {
+        margin: 15px auto;
+    }
+
+    .banner .col-1 {
+        order: 2;
+    }
+
+    .banner.col-2 {
+        order: 1;
+    }
+    /* Gamer responsive  */
+    .gamer {
+        flex-direction: column;
+    }
+    .gamer .col-2 {
+        text-align: center;
+
+    }
+    /* Careers responsive  */
+    .career {
+        flex-direction: column;
+    }
+    /* games responsive  */
+    .games {
+        padding: 0rem 1.5rem;
+    }
+
+    .games .heading {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .games .para {
+        text-align: center;
+    }
+
+    .games .games-pic-container {
+        flex-direction: column;
+    }
+
+    /* Play responsive  */
+    .play .col-1 .heading {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .play .image-2 {
+        right: 1px;
+    }
+
+    .play .col-2 {
+        padding: 0px 20px;
+    }
+
+    .play .col-1 p {
+        text-align: center;
+    }
+
+    /* icons responsive  */
+    .icon-content {
+        padding: 0px 30px;
+    }
+
+    .icon-content .icon {
+        width: 33%;
+        /* Adjust the width as needed */
+    }
+
+    /* games responsive  */
+
+    /* Footer responsive  */
+    footer .link-icons ul li {
+        width: 25%;
+    }
+
+    footer .link-content ul li {
+        width: 25%;
+    }
+
+    footer .link-policy ul li {
+        width: 40%;
+    }
+
+}
+
+/* Tab styles  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    header {
+        padding: 50px 30px 50px 10px;
+    }
+
+    .games {
+        padding: 0rem 2rem;
+    }
+
+    .games .gap {
+        display: flex;
+        gap: 5px;
+    }
+
+    /* .games-pic-container {
+        padding: 30px;
+    } */
+
+    .play .col-1 .heading {
+        font-size: 25px;
+    }
+
+    .play .image-2 {
+        right: 1px;
+    }
+
+    .play .col-2 {
+        padding: 0px 20px;
+    }
+
+    .play .two-column {
+        gap: 10px;
+    }
+}
+
+/* PC styles  */
+@media screen and (min-width: 768px) and (max-width: 1140px) {
+    header {
+        padding: 30px 60px 50px 60px;
+    }
+
+    .games-pic-container {
+        padding: 0px 80px;
+    }
+}
